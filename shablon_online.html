@@ -1,0 +1,657 @@
+<html>
+<head>
+	<title>Ontime-Media OOH-onliner</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<META name="description" content="Ontime-Media OOH-onliner"/>
+	<meta name="keywords" content="Ontime-Media OOH-onliner"/>
+	<meta name="CACHE-CONTROL" CONTENT="NO-CACHE"/>
+	<meta http-equiv="pragma" content="no-cache"/>
+	<META HTTP-EQUIV="Expires" content="0" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes"/>
+	<meta name="format-detection" content="telephone=no">
+	
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800,300italic,400italic,600italic,700italic,800italic&subset=latin,cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'>
+	<script src="https://use.fontawesome.com/1c73f37436.js"></script>
+	
+	<script type="text/javascript" src="lib/scripts/jquery-1.11.2.min.js"></script>
+	
+	<script type="text/javascript" src="lib/scripts/jquery-ui-1.10.3.custom.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="lib/scripts/css/smoothness/jquery-ui-1.10.3.custom.css" />
+	
+	<script type="text/javascript" src="lib/nice_select/js/jquery.nice-select.min.js "></script>
+	<link rel="stylesheet" type="text/css" href="lib/nice_select/css/nice-select.css" />
+	
+	<script type="text/javascript" src="lib/slider-pips/jquery-ui-slider-pips.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="lib/slider-pips/jquery-ui-slider-pips.css" />
+	
+	<link rel="stylesheet" type="text/css" href="shablon/site/css/styles-online.css" />
+	<link rel="stylesheet" type="text/css" href="shablon/site/css/sizes.css" />
+	<link rel="stylesheet" type="text/css" href="shablon/site/css/sizes-online.css" />
+	
+	<script type="text/javascript" src="lib/scripts/ontime-online.js"></script>
+</head>
+
+<BODY>
+
+
+<div class="mh-100prc py3">
+
+		<div class="mh-100prc left left-block pl3">
+			<div id="logo_container">
+				<div id="logo-online"></div>
+				<div id="logo-name">
+					OOH<br/>
+					<span>Onliner</span>
+				</div>
+			</div>
+			
+			<div class="mt4">
+				<div class="left_menu active">
+					<div class="icon"><i class="fa fa-calendar-check-o"></i></div>
+					<div class="name">Планирование</div>
+				</div>
+			</div>
+			
+		</div>
+		
+		<div class="mh-100prc left right-block pr3">
+			<!-- <p><input type="checkbox" id="check_1" /><label for="check_1" onclick="">Чекбокс</label></p>
+			
+			<p>
+				<input type="radio" name="rad" value="1" id="rad_1" /> <label for="rad_1" onclick="">Радио<br/>1</label><br/>
+				<input type="radio" name="rad" value="2" id="rad_2" /> <label for="rad_2" onclick="">Радио 2</label><br/>
+				<input type="radio" name="rad" value="3" id="rad_3" /> <label for="rad_3" onclick="">Радио 3</label>
+			</p>
+			
+			<p>
+				<input type="text" name="" placeholder="Текст" />
+			</p>
+			
+			<p>
+				<select>
+					<option value="Первый вариант">Первый вариант</option>
+					<option value="Второй вариант">Второй вариант</option>
+				</select>
+				
+				<div class="clear"></div>
+			</p>
+			
+			<p>
+				<div id="slider-range" class="show-slider-tips scale-slider" slider-postfix="%"></div>
+			</p>
+			-->
+			
+			<div id="planning-step-1">
+			
+				<div class="dark-bg px3 py2 h1 mb0">Планирование</div>
+				
+				<div class="dark-bg px3 py2">
+					<div class="h5 bold">
+						1. Рекламный бюджет
+					</div>
+					
+					<div class="pl2">
+						<p>
+							<input type="radio" name="rec_budget" id="rad_1_1" checked="checked" value="1" />
+							<label for="rad_1_1" onclick="" class="mb10">
+								<b>Получить рекомендации по бюджету</b>
+							</label><br/>
+							
+							<input type="radio" name="rec_budget" id="rad_1_2" value="0" />
+							<label for="rad_1_2" onclick="">
+								<b>Задать бюджет вручную</b>
+							</label>
+						</p>
+						
+						<div id="block_1_1">
+							<div class="table">
+								
+								<div class="tr">
+									<div class="td vac py1 tar blue pointer" onClick="$('#slider_1_1').slider('value', 1);">
+										Простое рекламное<br/>
+										сообщение
+									</div>
+									<div class="td vac py1 px2 tac">
+										<input type="hidden" name="rec_budget_value[1]" id="rec_1_1" />
+										<div class="scale-slider slider-gradient hide-slider-tips" id="slider_1_1"
+											slider-min="1" slider-max="3" slider-step="1" slider-value="2" slider-range="none"  slider-target="rec_1_1"
+											style="width: 100px;"
+										></div>
+									</div>
+									<div class="td vac py1 red pointer" onClick="$('#slider_1_1').slider('value', 3);">
+										Сложное рекламное<br/>
+										сообщение
+									</div>
+								</div>
+								
+								<div class="tr">
+									<div class="td vac py1 tar blue pointer" onClick="$('#slider_1_2').slider('value', 1);">
+										Поддержка существующего<br/>
+										продукта
+									</div>
+									<div class="td vac py1 px2 tac">
+										<input type="hidden" name="rec_budget_value[2]" id="rec_1_2" />
+										<div class="scale-slider slider-gradient hide-slider-tips" id="slider_1_2"
+											slider-min="1" slider-max="3" slider-step="1" slider-value="2" slider-range="none"  slider-target="rec_1_2"
+											style="width: 100px;"
+										></div>
+									</div>
+									<div class="td vac py1 red pointer" onClick="$('#slider_1_2').slider('value', 3);">
+										Запуск нового<br/> 
+										продукта
+									</div>
+								</div>
+								
+								<div class="tr">
+									<div class="td vac py1 tar blue pointer" onClick="$('#slider_1_3').slider('value', 1);">
+										Хорошо известный<br/>
+										продукт
+									</div>
+									<div class="td vac py1 px2 tac">
+										<input type="hidden" name="rec_budget_value[3]" id="rec_1_3" />
+										<div class="scale-slider slider-gradient hide-slider-tips" id="slider_1_3"
+											slider-min="1" slider-max="3" slider-step="1" slider-value="2" slider-range="none"  slider-target="rec_1_3"
+											style="width: 100px;"
+										></div>
+									</div>
+									<div class="td vac py1 red pointer" onClick="$('#slider_1_3').slider('value', 3);">
+										Малоизвестный<br/>
+										продукт
+									</div>
+								</div>
+								
+								<div class="tr">
+									<div class="td vac py1 tar blue pointer" onClick="$('#slider_1_4').slider('value', 1);">
+										Сильная поддержка<br/>
+										в&nbsp;других СМИ
+									</div>
+									<div class="td vac py1 px2 tac">
+										<input type="hidden" name="rec_budget_value[4]" id="rec_1_4" />
+										<div class="scale-slider slider-gradient hide-slider-tips" id="slider_1_4"
+											slider-min="1" slider-max="3" slider-step="1" slider-value="2" slider-range="none"  slider-target="rec_1_4"
+											style="width: 100px;"
+										></div>
+									</div>
+									<div class="td vac py1 red pointer" onClick="$('#slider_1_4').slider('value', 3);">
+										Слабая поддержка<br/>
+										в&nbsp;других СМИ
+									</div>
+								</div>
+								
+								<div class="tr">
+									<div class="td vac py1 tar blue pointer" onClick="$('#slider_1_5').slider('value', 1);">
+										Удачный<br/> креатив
+									</div>
+									<div class="td vac py1 px2 tac">
+										<input type="hidden" name="rec_budget_value[5]" id="rec_1_5" />
+										<div class="scale-slider slider-gradient hide-slider-tips" id="slider_1_5"
+											slider-min="1" slider-max="3" slider-step="1" slider-value="2" slider-range="none"  slider-target="rec_1_5"
+											style="width: 100px;"
+										></div>
+									</div>
+									<div class="td vac py1 red pointer" onClick="$('#slider_1_5').slider('value', 3);">
+										Неудачный<br/> креатив
+									</div>
+								</div>
+								
+								<div class="tr">
+									<div class="td vac py1 tar blue pointer" onClick="$('#slider_1_6').slider('value', 1);">
+										Конкурентная активность<br/>
+										низкая
+									</div>
+									<div class="td vac py1 px2 tac">
+										<input type="hidden" name="rec_budget_value[6]" id="rec_1_6" />
+										<div class="scale-slider slider-gradient hide-slider-tips" id="slider_1_6"
+											slider-min="1" slider-max="3" slider-step="1" slider-value="2" slider-range="none"  slider-target="rec_1_6"
+											style="width: 100px;"
+										></div>
+									</div>
+									<div class="td vac py1 red pointer" onClick="$('#slider_1_6').slider('value', 3);">
+										Конкурентная активность<br/>
+										высокая
+									</div>
+								</div>
+								
+								<div class="tr">
+									<div class="td vac py1 tar blue pointer" onClick="$('#slider_1_7').slider('value', 1);">
+										Известный<br/>
+										креатив
+									</div>
+									<div class="td vac py1 px2 tac">
+										<input type="hidden" name="rec_budget_value[7]" id="rec_1_7" />
+										<div class="scale-slider slider-gradient hide-slider-tips" id="slider_1_7"
+											slider-min="1" slider-max="3" slider-step="1" slider-value="2" slider-range="none"  slider-target="rec_1_7"
+											style="width: 100px;"
+										></div>
+									</div>
+									<div class="td vac py1 red pointer" onClick="$('#slider_1_7').slider('value', 3);">
+										Новый<br/>
+										креатив
+									</div>
+								</div>
+								
+								<div class="tr">
+									<div class="td vac py1 tar blue pointer" onClick="$('#slider_1_8').slider('value', 1);">
+										Стимулирование<br/>
+										потребления
+									</div>
+									<div class="td vac py1 px2 tac">
+										<input type="hidden" name="rec_budget_value[8]" id="rec_1_8" />
+										<div class="scale-slider slider-gradient hide-slider-tips" id="slider_1_8"
+											slider-min="1" slider-max="3" slider-step="1" slider-value="2" slider-range="none"  slider-target="rec_1_8"
+											style="width: 100px;"
+										></div>
+									</div>
+									<div class="td vac py1 red pointer" onClick="$('#slider_1_8').slider('value', 3);">
+										Изменение<br/>
+										отношения
+									</div>
+								</div>
+								
+							</div> <!-- /table -->
+						</div>
+						
+						<div class="lh3em my2" id="block_1_2">
+							<input type="text" name="budget" id="budget" value="" class="mr1" />
+							млн. руб.
+						</div>
+						
+					</div>
+				</div>
+				
+				
+				<div class="dark-bg px3 py3 mt3">
+					<div class="h5 bold">
+						2. Целевая аудитория (ЦА)
+					</div>
+					
+					<div class="pl2">
+						<p>
+							<input type="radio" name="gender" id="rad_2_1" checked="checked" value="0" />
+							<label for="rad_2_1" onclick="" class="mb10">
+								<b>Все 18+</b>
+							</label><br/>
+							
+							<input type="radio" name="gender" id="rad_2_2" value="1" />
+							<label for="rad_2_2" onclick="">
+								<b>Выбрать ЦА</b>
+							</label>
+						</p>
+						
+						<div id="block_2_1">
+						
+							<div class="left w180 mt2">
+								<input type="checkbox" name="gender_val[]" value="man_18_24" id="check_2_1" checked="checked" />
+								<label for="check_2_1">18—24, муж.</label>
+							</div>
+							<div class="left w180 mt2">
+								<input type="checkbox" name="gender_val[]" value="man_25_34" id="check_2_2" checked="checked" />
+								<label for="check_2_2">25—34, муж.</label>
+							</div>
+							<div class="left w180 mt2">
+								<input type="checkbox" name="gender_val[]" value="man_35_45" id="check_2_3" checked="checked" />
+								<label for="check_2_3">35—45, муж.</label>
+							</div>
+							<div class="clear"></div>
+							<div class="left w180 mt2">
+								<input type="checkbox" name="gender_val[]" value="woman_18_24" id="check_2_4" checked="checked" />
+								<label for="check_2_4">18—24, жен.</label>
+							</div>
+							<div class="left w180 mt2">
+								<input type="checkbox" name="gender_val[]" value="woman_25_34" id="check_2_5" checked="checked" />
+								<label for="check_2_5">25—34, жен.</label>
+							</div>
+							<div class="left w180 mt2">
+								<input type="checkbox" name="gender_val[]" value="woman_35_45" id="check_2_6" checked="checked" />
+								<label for="check_2_6">35—45, жен.</label>
+							</div>
+							<div class="clear mb3"></div>
+							
+						</div>
+					</div>
+				</div>
+				
+				<div class="dark-bg px3 py3 mt3">
+					<div class="h5 bold">
+						3. Форматы, задействованные в рекламной кампании
+					</div>
+					
+					<div class="pl2">
+						<p>
+							<input type="radio" name="self_price" id="rad_3_1" checked="checked" value="0" />
+							<label for="rad_3_1" onclick="" class="mb10">
+								<b>Использовать среднерыночные цены</b>
+							</label><br/>
+							
+							<input type="radio" name="self_price" id="rad_3_2" value="1" />
+							<label for="rad_3_2" onclick="">
+								<b>Указать цены вручную</b>
+							</label>
+						</p>
+						
+						
+						<div id="block_3_1">
+							<div class="left w360 mt2 lh2em">
+								<div class="inline-block w150">
+									<input type="checkbox" name="formats[]" value="cityformat" id="check_3_1" class="mt10" checked="checked" />
+									<label for="check_3_1">Сити-формат</label>
+								</div>
+								<div class="inline-block price">
+									<input type="text" name="price[cityformat]" id="price_3_1" value="23" class="compact mr1" />
+									тыс. руб.
+								</div>
+							</div>
+							
+							<div class="left w360 mt2 lh2em">
+								<div class="inline-block w150">
+									<input type="checkbox" name="formats[]" value="cityboard" id="check_3_2" class="mt10" checked="checked" />
+									<label for="check_3_2">Сити-борды</label>
+								</div>
+								<div class="inline-block price">
+									<input type="text" name="price[cityboard]" id="price_3_2" value="50" class="compact mr1" />
+									тыс. руб.
+								</div>
+							</div>
+							
+							<div class="clear"></div>
+							
+							<div class="left w360 mt2 lh2em">
+								<div class="inline-block w150">
+									<input type="checkbox" name="formats[]" value="billboard" id="check_3_3" class="mt10" checked="checked" />
+									<label for="check_3_3">Биллборды</label>
+								</div>
+								<div class="inline-block price">
+									<input type="text" name="price[billboard]" id="price_3_3" value="150" class="compact mr1" />
+									тыс. руб.
+								</div>
+							</div>
+							
+							<div class="left w360 mt2 lh2em">
+								<div class="inline-block w150">
+									<input type="checkbox" name="formats[]" value="supersite" id="check_3_4" class="mt10" checked="checked" />
+									<label for="check_3_4">Супер-сайты</label>
+								</div>
+								<div class="inline-block price">
+									<input type="text" name="price[supersite]" id="price_3_4" value="500" class="compact mr1" />
+									тыс. руб.
+								</div>
+							</div>
+							
+							<div class="clear mb3"></div>
+						</div>
+						
+					</div>
+				</div>
+				
+				
+				<div class="dark-bg px3 py3 mt3">
+					<div class="h5 bold">
+						4. Соотношение использования форматов
+					</div>
+					
+					<div class="pl2">
+						<p>
+							<input type="radio" name="manual_mode" id="rad_4_1" checked="checked" value="0" />
+							<label for="rad_4_1" onclick="" class="mb10">
+								<b>Автоматический расчет оптимальных вариантов</b>
+							</label><br/>
+							
+							<input type="radio" name="manual_mode" id="rad_4_2" value="1" />
+							<label for="rad_4_2" onclick="">
+								<b>Задать соотношение вручную</b>
+							</label>
+						</p>
+						
+						<div id="block_4_1" class="mb3">
+						
+							<div class="mt3">
+								<div class="left w180">
+									Сити-формат
+								</div>
+								<div class="left mt10">
+									<input type="hidden" name="manual[billboard]" id="proc_5_1" />
+									<div class="scale-slider show-slider-tips" id="slider_5_1"
+										slider-min="0" slider-max="100" slider-step="10" slider-value="50" slider-range="min"  slider-target="proc_5_1" slider-postfix="%"
+										slider-group="100prc" slider-tab="0"
+										style="width: 500px;"
+									></div>
+								</div>
+								<div class="clear"></div>
+							</div>
+							
+							<div class="mt3">
+								<div class="left w180">
+									Сити-борды
+								</div>
+								<div class="left mt10">
+									<input type="hidden" name="manual[cityboard]" id="proc_5_2" />
+									<div class="scale-slider show-slider-tips" id="slider_5_2"
+										slider-min="0" slider-max="100" slider-step="10" slider-value="30" slider-range="min"  slider-target="proc_5_2" slider-postfix="%"
+										slider-group="100prc" slider-tab="1"
+										style="width: 500px;"
+									></div>
+								</div>
+								<div class="clear"></div>
+							</div>
+							
+							<div class="mt3">
+								<div class="left w180">
+									Биллборды
+								</div>
+								<div class="left mt10">
+									<input type="hidden" name="manual[cityboard]" id="proc_5_3" />
+									<div class="scale-slider show-slider-tips" id="slider_5_3"
+										slider-min="0" slider-max="100" slider-step="10" slider-value="10" slider-range="min"  slider-target="proc_5_3" slider-postfix="%"
+										slider-group="100prc" slider-tab="2"
+										style="width: 500px;"
+									></div>
+								</div>
+								<div class="clear"></div>
+							</div>
+							
+							<div class="mt3">
+								<div class="left w180">
+									Супер-сайты
+								</div>
+								<div class="left mt10">
+									<input type="hidden" name="manual[cityboard]" id="proc_5_4" />
+									<div class="scale-slider show-slider-tips" id="slider_5_4"
+										slider-min="0" slider-max="100" slider-step="10" slider-value="10" slider-range="min"  slider-target="proc_5_4" slider-postfix="%"
+										slider-group="100prc" slider-tab="3"
+										style="width: 500px;"
+									></div>
+								</div>
+								<div class="clear"></div>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+				
+				
+				<div class="dark-bg px3 py3 mt3 mb3">
+					<button onclick="return calc_media_plan();">Провести расчет</button>
+				</div>
+				
+			</div>
+			
+			
+			<div id="planning-step-2" class="mb3 hidden">
+				<div class="dark-bg px3 py3">
+					
+					<div class="h4 bold mb0">
+						Оптимальные соотношения форматов
+					</div>
+					<div class="bold mt0 gray mb2">
+						Результат расчета
+					</div>
+					
+					
+					<div id="calc_result">
+					
+						<div class="h5 bold mb0">Москва</div>
+						<div class="bold">Бюджет: 22 млн. руб.</div>
+						
+						<div class="table border-horisontal w100prc mb3" id="price_tbl_1">
+							<div class="tr">
+								<div class="td px2 py1 bold vab">#</div>
+								<div class="td px2 py1 bold vab">Сити-формат</div>
+								<div class="td px2 py1 bold vab">Сити-борды</div>
+								<div class="td px2 py1 bold vab">Биллборды</div>
+								<div class="td px2 py1 bold vab">Супер-сайты</div>
+								<div class="td px2 py1 bold vab">Правильная<br/> атрибуция</div>
+							</div>
+							
+							<div class="tr pointer" id="price_row_1" radio-value="1" radio-name="percentage">
+								<div class="td px2 py2 vac">
+									<input type="radio" name="percentage" id="percentage_1" checked="checked" value="1" />
+									<label for="percentage_1" onclick="" class="inline"></label>
+								</div>
+								<div class="td px2 py1 vac">
+									<b>50 сторон</b><br/>
+									<span class="tiny">6 млн. руб. (40%)</span>
+								</div>
+								<div class="td px2 py1 vac">
+									<b>0 сторон</b><br/>
+									<!--small>0 млн. руб. (0%)</small-->
+									<span class="tiny">0 млн. руб. (0%)</span>
+								</div>
+								<div class="td px2 py1 vac">
+									<b>0 сторон</b><br/>
+									<span class="tiny">0 млн. руб. (0%)</span>
+								</div>
+								<div class="td px2 py1 vac">
+									<b>19 сторон</b><br/>
+									<span class="tiny">9 млн. руб. (60%)</span>
+								</div>
+								<div class="td px2 py1 vac">
+									15.7%
+								</div>
+							</div>
+							
+							<div class="tr pointer" id="price_row_2" radio-value="2" radio-name="percentage">
+								<div class="td px2 py2 vac">
+									<input type="radio" name="percentage" id="percentage_2" value="2" />
+									<label for="percentage_2" onclick="" class="inline"></label>
+								</div>
+								<div class="td px2 py1 vac">
+									<b>50 сторон</b><br/>
+									<span class="tiny">6 млн. руб.(40%)</span>
+								</div>
+								<div class="td px2 py1 vac">
+									<b>0 сторон</b><br/>
+									<span class="tiny">0 млн. руб. (0%)</span>
+								</div>
+								<div class="td px2 py1 vac">
+									<b>0 сторон</b><br/>
+									<span class="tiny">0 млн. руб. (0%)</span>
+								</div>
+								<div class="td px2 py1 vac">
+									<b>19 сторон</b><br/>
+									<span class="tiny">9 млн. руб. (60%)</span>
+								</div>
+								<div class="td px2 py1 vac">
+									15.2%
+								</div>
+							</div>
+							
+							<div class="tr pointer" id="price_row_3" radio-value="3" radio-name="percentage">
+								<div class="td px2 py2 vac">
+									<input type="radio" name="percentage" id="percentage_3" value="3" />
+									<label for="percentage_3" onclick="" class="inline"></label>
+								</div>
+								<div class="td px2 py1 vac">
+									<b>50 сторон</b><br/>
+									<span class="tiny">6 млн. руб. (40%)</span>
+								</div>
+								<div class="td px2 py1 vac">
+									<b>0 сторон</b><br/>
+									<span class="tiny">0 млн. руб. (0%)</span>
+								</div>
+								<div class="td px2 py1 vac">
+									<b>0 сторон</b><br/>
+									<span class="tiny">0 млн. руб. (0%)</span>
+								</div>
+								<div class="td px2 py1 vac">
+									<b>19 сторон</b><br/>
+									<span class="tiny">9 млн. руб. (60%)</span>
+								</div>
+								<div class="td px2 py1 vac">
+									15.2%
+								</div>
+							</div>
+							
+							<div class="tr pointer" id="price_row_4" radio-value="4" radio-name="percentage">
+								<div class="td px2 py2 vac">
+									<input type="radio" name="percentage" id="percentage_4" value="4" />
+									<label for="percentage_4" onclick="" class="inline"></label>
+								</div>
+								<div class="td px2 py1 vac">
+									<b>50 сторон</b><br/>
+									<span class="tiny">6 млн. руб. (40%)</span>
+								</div>
+								<div class="td px2 py1 vac">
+									<b>0 сторон</b><br/>
+									<span class="tiny">0 млн. руб. (0%)</span>
+								</div>
+								<div class="td px2 py1 vac">
+									<b>0 сторон</b><br/>
+									<span class="tiny">0 млн. руб. (0%)</span>
+								</div>
+								<div class="td px2 py1 vac">
+									<b>19 сторон</b><br/>
+									<span class="tiny">9 млн. руб. (60%)</span>
+								</div>
+								<div class="td px2 py1 vac">
+									14.6%
+								</div>
+							</div>
+							
+							<div class="tr pointer" id="price_row_5" radio-value="5" radio-name="percentage">
+								<div class="td px2 py2 vac">
+									<input type="radio" name="percentage" id="percentage_5" value="5" />
+									<label for="percentage_5" onclick="" class="inline"></label>
+								</div>
+								<div class="td px2 py1 vac">
+									<b>50 сторон</b><br/>
+									<span class="tiny">6 млн. руб. (40%)</span>
+								</div>
+								<div class="td px2 py1 vac">
+									<b>0 сторон</b><br/>
+									<span class="tiny">0 млн. руб. (0%)</span>
+								</div>
+								<div class="td px2 py1 vac">
+									<b>65 сторон</b><br/>
+									<span class="tiny">1.5 млн. руб. (10%)</span>
+								</div>
+								<div class="td px2 py1 vac">
+									<b>15 сторон</b><br/>
+									<span class="tiny">7.5 млн. руб. (50%)</span>
+								</div>
+								<div class="td px2 py1 vac">
+									14.6%
+								</div>
+							</div>
+							
+						</div> <!--/table-->
+						
+					</div> <!--/id=calc_result-->
+					
+					<button class="mr2">Сформировать медиаплан</button>
+					
+					<button onClick="return back_to_planning();">Назад</button>
+					
+				</div>
+			</div>
+			
+			
+		</div>
+			
+		<div class="clear"></div>
+		
+		
+	
+</div>
+
+</body>
+</html>

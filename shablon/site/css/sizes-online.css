@@ -1,0 +1,56 @@
+@media (max-width : 1200px) {
+	
+	body {
+		font-size: 13px;
+	}
+	
+	#logo-online {
+		display: none;
+	}
+	
+	#logo-name {
+		position: absolute;
+		left: 20;
+	}
+	
+	.left-block {
+		width: 190px;
+	}
+	
+	.right-block {
+		width: calc(100% - 190px);
+		
+	}
+	
+	.left_menu {
+		font-size: 13px;
+		font-weight: bold;
+		text-align: center;
+	}
+	
+	.left_menu .icon {
+		float: none;
+		width: 100%;
+		text-align: center;
+	}
+	.left_menu .name {
+		float: none;
+		width: 100%;
+		text-align: center;
+		line-height: 1em;
+		padding-bottom: 10px;
+	}
+	
+	.left_menu .icon .fa {
+		font-size: 49px;
+		line-height: 70px;
+	}
+	
+	:root {
+	  --space-cp: 0.75rem;
+	  --space-1: .375rem;
+	  --space-2: 0.75rem;
+	  --space-3: 1.5rem;
+	  --space-4: 3rem;
+	}
+}
